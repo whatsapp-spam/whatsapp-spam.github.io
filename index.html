@@ -1,0 +1,516 @@
+<?php
+    $secret = 'veni1613vedi124578vici134679'; // это секретная фраза, заменить на свою
+
+    $data = array(
+        'shopid' => 54111, // id шопа, заменить на свой
+        'payno' => rand(750,73400000),
+        'amount' => 3850.00, // цена
+        'description' => 'Ключ активации WhatsApp Spam'
+    );
+    ksort($data,SORT_STRING);
+    $sign = hash('sha256',implode(':',$data).':'.$secret);
+?>
+
+
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>WhatsApp рассылка</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="Content/Landing/images/fav.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Content/Landing/images/fav.png">
+
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="Content/Landing/style.css" rel="stylesheet">
+    <link href="Content/Landing/responsive.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="Content/Landing/func.js"></script>
+    <script src="Content/Landing/js/slide.js"></script>
+    <script type='text/javascript' src='Content/Landing/bootstrap.min.js'></script>
+
+</head>
+<body>
+
+    <div class="am hide">
+        <div class="wrapper">
+            <div class="logo" style="color: #000">
+                <a href="/"><img src="Content/Landing/images/logo2.png" style="width: 60%;"></a>
+            </div>
+            <ul id="menu-main" class="nav navbar-nav" style="margin-top: 15px;">
+                <li class="menu-item"><a class="menu-item float" href="#">Возможности</a></li>
+                <li class="menu-item"><a class="menu-item float" href="#">Как это работает</a></li>
+                <li class="menu-item"><a class="menu-item float" href="#">Эффективность</a></li>
+                <li class="menu-item"><a class="menu-item float" href="#">Отзывы</a></li>
+                <li class="menu-item"><a class="menu-item float" href="#">Вопросы</a></li>
+
+                <li class="menu-item lk">
+    <form method="POST" action=https://primearea.biz/merchant/pay/>
+        <input type="hidden" name="shopid" value="<?php echo $data['shopid'];?>">
+        <input type="hidden" name="payno" value="<?php echo $data['payno'];?>">
+        <input type="hidden" name="amount" value="<?php echo $data['amount'];?>">
+        <input type="hidden" name="description" value="<?php echo $data['description'];?>">
+        <input type="hidden" name="sign" value="<?php echo $sign;?>"><br>
+        <button class="button" style="margin-top: -14px;">Оплатить</button>
+    </form>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="header">
+
+
+        <nav id="mainNav" class="navbar navbar-default affix-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" title=""><img src="Content/Landing/images/logo.png"></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul id="menu-main" class="nav navbar-nav">
+                        <li class="menu-item"><a class="menu-item float" href="#">Возможности</a></li>
+                        <li class="menu-item"><a class="menu-item float" href="#">Как это работает</a></li>
+                        <li class="menu-item"><a class="menu-item float" href="#">Эффективность</a></li>
+                        <li class="menu-item"><a class="menu-item float" href="#">Отзывы</a></li>
+                        <li class="menu-item"><a class="menu-item float" href="#">Вопросы</a></li>
+                        <li class="menu-item lk">
+    <form method="POST" action=https://primearea.biz/merchant/pay/>
+        <input type="hidden" name="shopid" value="<?php echo $data['shopid'];?>">
+        <input type="hidden" name="payno" value="<?php echo $data['payno'];?>">
+        <input type="hidden" name="amount" value="<?php echo $data['amount'];?>">
+        <input type="hidden" name="description" value="<?php echo $data['description'];?>">
+        <input type="hidden" name="sign" value="<?php echo $sign;?>"><br>
+        <button class="button" style="margin-top: -14px;">Оплатить</button>
+    </form></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="wrapper">
+            <div class="header-block">
+
+                <div class="title"  style="margin-top:-40px"	>
+                    <h1 style="font-size: 24px;  ">Программа для рассылки сообщений <br>в WhatsApp</h1>
+                </div>
+                <div class="right-col">
+                    <div class="video-bg" align="center" style="margin-top: 0px" >
+					
+                        <!-- /.<iframe src="https://rutube.ru/video/76228705cbd44a84632db0191086b221/" frameborder="0" allowfullscreen></iframe>  -->
+						
+						
+					
+					
+				   </div>
+                </div><!--/right-col-->
+
+                <div class="left-col">
+
+
+                    <div class="pre-reg">
+                        <div class="header-desc">
+                            <div class="slider">
+                                <ul>
+                                    <li>
+                                        <h1 style="font-size: 18px;">ЧТО ТАКОЕ WhatsApp Spam?</h1>
+                                        <p>
+                                            Отличный инструмент для продвижения и автоматизации действий в WhatsApp. Превосходя всех своих конкурентов, WhatsApp на сегодняшний день является самым мощным инструментом и на это конечно же есть причины. Программа смогла пробить все алгоритмы и ограничения, а так же показала превосходную конверсию.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h1 style="font-size: 18px;">КОМУ НУЖНА ПРОГРАММА ?</h1>
+                                        <p>
+                                            В первую очередь, программу оценят пользователи, ведущие собственный бизнес. При помощи этой программы можно организовать отличную рекламную кампанию для своего бизнеса и поднять уровень продаж своих товаров или услуг.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div><!--/slider-->
+                        </div><!--/header-desc-->
+
+                        <div class="button-social" style="margin-top:40px">
+                            <a href="whatsapp(1.3).exe" target="_blank"><div class="button" style="border: 1px solid #fff;">Скачать</div></a>
+
+                                <form method="POST" action=https://primearea.biz/merchant/pay/>
+        <input type="hidden" name="shopid" value="<?php echo $data['shopid'];?>">
+        <input type="hidden" name="payno" value="<?php echo $data['payno'];?>">
+        <input type="hidden" name="amount" value="<?php echo $data['amount'];?>">
+        <input type="hidden" name="description" value="<?php echo $data['description'];?>">
+        <input type="hidden" name="sign" value="<?php echo $sign;?>"><br>
+        <button class="button" style="    margin-top: 8px;">Оплатить</button>
+    </form>
+
+
+                           
+                        </div><!--/button-social-->
+                        <br clear="all">
+                    </div><!--/pre-reg-->
+
+                </div><!--/left-col-->
+            </div><!--/header-block-->
+
+        </div><!--/wrapper-->
+        <br clear="all"><br><br>
+    </div><!--/header-->
+
+    <div class="block-one b2" id="bl1">
+        <div class="wrapper">
+            <div class="heqder-block">Функции программы:</div>
+            <div class="in-b item-block-one">
+                <div class="header-item-bo">
+                    <div class="glyph dir"></div>
+                    <div class="text-header-bo">Рассылка сообщений</div>
+                </div>
+                <div class="text-content-bo">
+                    <div class="markg">Уже доступно</div> Автоматическая отправка сообщений по указанным контактам. Так же есть возможность прикрепить изображение
+                </div>
+                <div class="color-line"><img src="Content/Landing/images/color-line.jpg"></div>
+            </div>
+            <div class="in-b item-block-one">
+                <div class="header-item-bo">
+                    <div class="glyph sborandfiltr"></div>
+                    <div class="text-header-bo">Чеккер контактов</div>
+                </div>
+                <div class="text-content-bo">
+                    <div class="markg">Уже доступно</div> Проверка факта регистрации номера телефона в WhatsApp
+                </div>
+                <div class="color-line"><img src="Content/Landing/images/color-line.jpg"></div>
+            </div>
+            <div class="in-b item-block-one">
+                <div class="header-item-bo">
+                    <div class="glyph autopost"></div>
+                    <div class="text-header-bo">Мультимедиа</div>
+                </div>
+                <div class="text-content-bo">
+                    <div class="markg">Уже доступно</div> Возможность прикрепить изображение к рассылаемым сообщениям
+                </div>
+                <div class="color-line"><img src="Content/Landing/images/color-line.jpg"></div>
+            </div>
+            <div class="in-b item-block-one">
+                <div class="header-item-bo">
+                    <div class="glyph vzaim"></div>
+                    <div class="text-header-bo">Автоматическая регистрация</div>
+                </div>
+                <div class="text-content-bo">
+                    <div class="markg">Уже доступно</div> Вам не нужно регистрировать аккаунты вручную, за вас это сделает програма автоматически в неограниченных количествах
+                </div>
+
+                <div class="color-line"><img src="Content/Landing/images/color-line.jpg"></div>
+            </div>
+            <div class="in-b item-block-one">
+                <div class="header-item-bo">
+                    <div class="glyph comment"></div>
+                    <div class="text-header-bo">Автоответчик</div>
+                </div>
+                <div class="text-content-bo">
+                    <div class="markg">Уже доступно</div> Вы можете настроить автоответчик прямо в WhatsApp Spam. Вам больше не нужно авторизовываться с сотни аккаунтов, чтобы ответить на сообщение
+                </div>
+                <div class="color-line"><img src="Content/Landing/images/color-line.jpg"></div>
+            </div>
+            <div class="in-b item-block-one">
+                <div class="header-item-bo">
+                    <div class="glyph copy1"></div>
+                    <div class="text-header-bo">Высокая скорость</div>
+                </div>
+                <div class="text-content-bo">
+                    <div class="markg">Уже доступно</div> Регистрация нового аккаунта занимает считаные секунды, аккаунт рассылает до 50-и сообщений в течении десяти секунд
+                </div>
+                <div class="color-line"><img src="Content/Landing/images/color-line.jpg"></div>
+            </div>
+            <div class="in-b item-block-one">
+                <div class="header-item-bo">
+                    <div class="glyph auto"></div>
+                    <div class="text-header-bo">Статистика использования</div>
+                </div>
+                <div class="text-content-bo">
+                    <div class="markg">Уже доступно</div> Програма автоматически собирает статистику и показывает в режиме реального времени - сколько сообщений отправлено, сколько аккаунтов заблокировано
+                </div>
+                <div class="color-line"><img src="Content/Landing/images/color-line.jpg"></div>
+            </div>
+            <div class="in-b item-block-one">
+                <div class="header-item-bo">
+                    <div class="glyph razdel"></div>
+                    <div class="text-header-bo">Бесплатные прокси</div>
+                </div>
+                <div class="text-content-bo">
+                    <div class="markg">Уже доступно</div> Вам не нужно покупать прокси, WhatsApp Spam автоматически запрашивает публичные сервера и проверяет на возможность использования в WhatsApp
+                </div>
+                <div class="color-line"><img src="Content/Landing/images/color-line.jpg"></div>
+            </div>
+            <div class="in-b item-block-one">
+                <div class="header-item-bo">
+                    <div class="glyph telega"></div>
+                    <div class="text-header-bo">Бесплатные обновления</div>
+                </div>
+                <div class="text-content-bo">
+                    <div class="markg">Уже доступно</div> Купив програму один раз, вы на всю жизнь имеете доступ к автоматическим обновлениям
+                </div>
+            </div>
+            <br clear="all">
+            <h2 class="text-content-bo" style="text-align:center;font-size:18px">Купленная програма не имеет ограничений</h2>
+            <br clear="all">
+        </div>
+    </div>
+
+
+    <div class="block-one block-two b1" id="bl2">
+        <div class="wrapper" style="max-width: 1240px">
+            <div class="heqder-block">Как это работает?</div>
+            <div class="in-b item-block-best">
+                <div class="header-item-bt">
+                    <img src="Content/Landing/images/r1.png" class="etapy-icon">
+                    <div class="text-header-bt">
+                        Этап #1
+                    </div>
+                </div>
+                <div class="text-content-bt">
+                    Приобретаете ключ активации на этом сайте. Скачиваете WhatsApp Spam, устанавливаете, указываете купленный ключ активации
+                </div>
+            </div>
+            <div class="in-b item-block-best">
+                <div class="header-item-bt">
+                    <img src="Content/Landing/images/r2.png" class="etapy-icon">
+                    <div class="text-header-bt">
+                        Этап #2
+                    </div>
+                </div>
+                <div class="text-content-bt">
+                    Добавляете номера телефонов из своей базы и отсеиваете те, на которых не зарегистрирован WhatsApp
+                </div>
+            </div>
+            <div class="in-b item-block-best">
+                <div class="header-item-bt">
+                    <img src="Content/Landing/images/r3.png" class="etapy-icon">
+                    <div class="text-header-bt">
+                        Этап #3
+                    </div>
+                </div>
+                <div class="text-content-bt">
+                    Указываете контакты в WhatsApp Spam, вводите сообщение, которое будет рассылаться
+                </div>
+            </div>
+            <div class="in-b item-block-best">
+                <div class="header-item-bt">
+                    <img src="Content/Landing/images/r4.png" class="etapy-icon">
+                    <div class="text-header-bt">
+                        Результат
+                    </div>
+                </div>
+                <div class="text-content-bt">
+                    Нажимаете кнопку "Запустить" и следите за ростом продаж
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="block-one b4" id="bl4" style="padding-top: 80px;">
+
+        <div class="wrapper what-users-say">
+            <div class="heqder-block bq4">Что говорят пользователи:</div>
+
+            <div class="slider-global-wrapper">
+                <div class="slider-global">
+                    <div class="slider on-slider slide">
+                        <div class="block-users">
+                            <div class="user-job">Лиля Юсупова <br><h3 style="font-size:14px;">SMM-специалист</h3></div>
+
+                            <div class="users-text">«Успела получить ключ активации за отзыв. Лично моё мнение, програма супер. Даже инстаграм не показал такой эффективности, а с ним я работаю уже несколько лет. В общем - огонь 🔥»</div>
+                        </div>
+                    </div>
+                    <div class="slider slide">
+                        <div class="block-users">
+                            <div class="user-job">Виктор Морозов <br><h3 style="font-size:14px;">Арбитражник</h3></div>
+                            <div class="users-text">«Занимаюсь арбитражем трафика уже долгое время. И я скажу вам, что при помощи WhatsApp Spam можно делать огромные продажи за гроши. Програма окупила себя за пол часа. Очень жаль, что автор не послушал меня и начал публичные продажи»</div>
+                        </div>
+                    </div>
+                    <div class="slider slide">
+                        <div class="block-users">
+                            <div class="user-job">Владимир Авраменко <br><h3 style="font-size:14px;">Предприниматель</h3></div>
+
+                            <div class="users-text">«Пользуюсь программой около двух месяцев, за это время я понял, что WhatsApp - отличная платформа для бизнеса. На данный момент я получаю из WhatsApp более 70% лидов (такси по г. Москва). Всем рекомендую 👍»</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation-users">
+                    <div class="point act" data="1"></div>
+                    <div class="point" data="2"></div>
+                    <div class="point" data="3"></div>
+                </div>
+            </div><!--/slider-global-wrapper -->
+
+            <div class="functions-image-wrapper">
+                <img src="Content/Landing/images/functions-image.png" class="functions-image">
+            </div>
+
+            <br clear="all">
+        </div>
+
+    </div><!--/block-one b4 -->
+
+
+
+
+
+
+    <div class="l-grid l-grid--container" id="bl3">
+
+    <div id="i-features" class="ui-home-advantages">
+        <div class="l-grid l-grid--container">
+            <div class="l-row l-row--xs-middle ui-home-advantage">
+                <div class="l-col l-col--xs-12 l-col--md-6">
+                    <div class="ui-home-advantage__heading bq3">Отправляйте сообщения правильным путем</div>
+                    <div class="ui-home-advantage__text">Массовая рассылка сообщений обеспечивает отличный трафик. В WhatsApp очень высокий процент открытия сообщений, поэтому вся ваша целевая аудитория увидит ваше предложение.
+                        <br><br>
+                        Мы предлагаем настолько мощную рассылку сообщений, которую не предлагал еще никто. Успейте собрать все сливки вместе с нами.
+                    </div>
+                </div>
+                <div class="l-col l-col--xs-12 l-col--md-6 l-col--xs-first l-col--md-reset" >
+                    <div class="ui-home-advantage__image"><img src="Content/Landing/images/advantage-1.png" alt=""></div>
+                </div>
+            </div>
+            <div class="l-row l-row--xs-middle ui-home-advantage">
+                <div class="l-col l-col--xs-12 l-col--md-6">
+                    <div class="ui-home-advantage__image"><img src="Content/Landing/images/advantage-2.png" alt=""></div>
+                </div>
+                <div class="l-col l-col--xs-12 l-col--md-6">
+                    <div class="ui-home-advantage__heading">Рекламируетесь по целевой аудитории</div>
+                    <div class="ui-home-advantage__text">
+                        В WhatsApp огромная аудитория, практически каждый телефон установил себе приложение WhatsApp. Благодаря нашей програме вы можете сделать таргетированную рассылку по своей базе телефонов.
+                        <br><br>
+                        И не важно, будет это 100 сообщений или 10 000. Наша програма справится с любыми обьемами.
+                    </div>
+                </div>
+            </div>
+            <div class="l-row l-row--xs-middle ui-home-advantage">
+                <div class="l-col l-col--xs-12 l-col--md-6">
+                    <div class="ui-home-advantage__heading">Автоматизируйте вашу рассылку</div>
+                    <div class="ui-home-advantage__text">
+                        Вам не нужно регистрировать аккаунты вручную. Мы сделаем это за вас.
+                        <br><br>
+                        Подключите любой доступный сервис sms-активации и програма готова рассылать тонны сообщений.
+                    </div>
+                </div>
+                <div data-wow-duration="1.5s" class="l-col l-col--xs-12 l-col--md-6 l-col--xs-first l-col--md-reset">
+                    <div class="ui-home-advantage__image"><img src="Content/Landing/images/advantage-3.png" alt=""></div>
+                </div>
+            </div>
+            <div class="l-row l-row--xs-middle ui-home-advantage">
+                <div class="l-col l-col--xs-12 l-col--md-6">
+                    <div class="ui-home-advantage__image"><img src="Content/Landing/images/advantage-4.png" alt=""></div>
+                </div>
+                <div class="l-col l-col--xs-12 l-col--md-6">
+                    <div class="ui-home-advantage__heading">Самый эффективный трафик</div>
+                    <div class="ui-home-advantage__text">
+                        Себестоимость пятидесяти сообщений всего в 1 рубль.
+                        <br><br>
+                        10 000 отправленных сообщений обойдутся вам всего в 200 рублей.
+                        <br><br>
+                        Понимаете насколько это дешевый и эффективный трафик?
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <div class="block-one b4" id="bl4" style="padding-top: 80px;text-align: center;">
+        <div class="heqder-block bq4">Скриншот програмы (версия 1.3)</div>
+        <img src="Content/Landing/images/scr.png" style="border: 1px solid #9f9898;filter: drop-shadow(-3px 3px 9px black);width: 90vw;height: auto;max-width: 1000px;">
+    </div>
+
+    <div class="block-one b4" style="text-align: center;">
+        <div class="heqder-block bq4">Новое в версии 1.3</div>
+
+        <div id="i-features" class="ui-home-advantages">
+            <div class="l-grid l-grid--container">
+
+            <div class="l-row l-row--xs-middle ui-home-advantage">
+                <div class="l-col l-col--xs-12 l-col--md-6">
+                    <div class="ui-home-advantage__image"><img src="Content/Landing/images/1.png" alt=""></div>
+                </div>
+                <div class="l-col l-col--xs-12 l-col--md-6">
+                    <div class="ui-home-advantage__heading">Чеккер телефонных номеров</div>
+                    <div class="ui-home-advantage__text">
+                        Вы можете любой бесплатной програмой собрать в нужной группе ВК, ok.ru (или любой другой социальной сети) телефонные номера.
+                        <br><br>
+                        И после этого, если они зарегистрированы в WhatsApp, то произвести рассылку личных сообщений.
+                    </div>
+                </div>
+            </div>
+
+            <div class="l-row l-row--xs-middle ui-home-advantage">
+                <div class="l-col l-col--xs-12 l-col--md-6">
+                    <div class="ui-home-advantage__heading bq3">7 сервисов СМС-активаций</div>
+                    <div class="ui-home-advantage__text">Мы исключили такую проблему, как нехватка сим-карт в сервисах смс-активаций.
+                        <br><br>
+                        У вас теперь есть 7 сервисов, при помощи которых происходит автоматическая регистрация аккаунтов.
+                    </div>
+                </div>
+                <div class="l-col l-col--xs-12 l-col--md-6 l-col--xs-first l-col--md-reset" >
+                    <div class="ui-home-advantage__image"><img src="Content/Landing/images/2.png" alt=""></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>м
+
+    <div class="block-one b4" id='bl6'>
+			
+        <div class="l-grid--container dsc">
+            <ul>
+                <li>Покупая ключ активации вы получаете доступ к програме навсегда.</li>
+                <li>Все последующие обновления абсолютно бесплатны. Вам нужно лишь один раз нажать "Проверить обновления".</li>
+                <li>Поддержка прокси будет в следующем обновлении. На данный момент вы без проблем можете использовать публичные (они так же загружаются в програму одним нажатием кнопки).</li>
+                <li>После покупки вы получаете личного технического специалиста, который будет отвечать на все ваши вопросы по работе програмы.</li>
+                <li>На данный момент есть только версия под Windows 7 и выше. Unix и Mac системы не планируются.</li>
+                <li>В течении двух суток вы можете полностью вернуть денежные средства, если програма не будет соответствовать заявленным возможностям.</li>
+                <li>Покупка програмы производится только на этом сайте. Выдача ключа активации автоматическая.</li>
+            </ul>
+        </div>
+
+        <div class="l-grid--container dsc" style="text-align: center;font-size: 25px;margin-top: 50px;">
+            И самое главное, успей купить софт по скидке 52%* <span style="
+    text-decoration: line-through;
+
+    font-size:  22px;
+    font-weight:  bold;
+	">8500</span> 
+		<span style="font-weight: bold; font-size:  24px; color: #339900;">   3850   </span>рублей
+		<span style="font-size:  14px;"><h4>*акция действительна до следующего обновления 1.4 </h4>
+    </div>
+<div align=center>
+		<video src="video/wtsp.mp4" controls height=80% width=80%  ></video>
+		</div>
+    <div class="block-one block-pre-footer b5" id="bl5">
+        <div class="wrapper">
+            <div class="copy">WhatsApp Spam 2018</div>
+        </div>
+		
+    </div>
+    <a href="#" class="scrollup">Наверх</a>
+</body>
+</html>
