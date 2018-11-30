@@ -1,1 +1,1 @@
-﻿# whatsapp-spam.github.io
+﻿# whatsapp.spambot.github.io
